@@ -1,0 +1,44 @@
+{
+  "name": "mern-todolist",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Todo List MERN stack project",
+  "author": "Maayan Savir",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "body-parser": "^1.18.3",
+    "bootstrap": "^3.3.7",
+    "classnames": "^2.2.5",
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "lodash.isempty": "^4.4.0",
+    "mongoose": "^5.2.11",
+    "nodemon": "^1.18.4",
+    "prop-types": "^15.6.0",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "react-redux": "^5.0.7",
+    "react-scripts": "1.1.4",
+    "redux": "^4.0.0",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.3.0",
+    "dotenv": "^6.0.0",
+    "http-status": "^0.2.0"
+  },
+  "scripts": {
+    "server": "nodemon server/app.js",
+    "start:dev": "react-scripts start",
+    "start": "node server/app.js",
+    "dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run start:dev\"",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "heroku-postbuild": "npm install && npm run build"
+  },
+  "devDependencies": {
+    "redux-devtools": "^3.4.1",
+    "concurrently": "^3.5.0"
+  },
+  "proxy": "http://localhost:5000/"
+}
