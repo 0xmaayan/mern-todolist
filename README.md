@@ -31,7 +31,7 @@ cp .env.example .env
 npm run dev
 ```
 
-## Development (Webpack dev server) mode:
+## Development
 
 This app is ready to deploy on heroku server
 
